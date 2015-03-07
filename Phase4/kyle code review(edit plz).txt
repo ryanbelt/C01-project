@@ -1,0 +1,19 @@
+File: twitter_explorer.py, test_twitter_explorer.py
+Time: Nov 26 13:52 version
+Reviewed by: Ryan Pan
+
+
+pros.
+1. good function output as we have in group discussed
+2. good comment and doc string to go through. Easy understand to keep up
+3. variable naming is 	meaningful. eg. tweet_list is easy to get the idea is a list of all tweet object. each object key is tweet ID 
+4. test case cover all twitter_explower include the edge cases
+
+cons.
+1. have improvement from last reviewing, but still have some of the line over 80 charater.  eg. line 177
+
+overall.
+good code quality. no repeat coding in twitter_explower.
+good consistency. follow all we need from group meeting discussion
+good maintainbility. meaningful variable naming good docstring, meaningful comment
+

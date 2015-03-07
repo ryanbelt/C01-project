@@ -1,0 +1,4 @@
+File:article_explorer.py
+Time:Nov 12 20:00 version
+
+After going through the program and reviewing the code, article_explorer seems pretty well done. Every function followed our expected purpose and gave appropriate output. The functionality and variable naming are pretty good. It has very understandable doc strings. Also, the whole file looks very clean. But there are some thing can be improve as well. First of all, each function is long and with so less comment. It is hard to understand and modify for upcoming programmer. Second, it doesn’t follow the PEP8 style so well. For example, line 215 is over 80 chars limit. Lastly, there is not any test case at this moment. It is hard to tell if there is bug by running into the console. Hopefully, Roger could improve the quality, programming style and add test cases earlier.

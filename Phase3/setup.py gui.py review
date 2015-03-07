@@ -1,0 +1,21 @@
+File: setup.py
+Time: November 13, 18:58 version
+Reviewed by: Kyle Bridgemohansingh
+
+setup.py is a python file which gives installation shell script permission and executes.
+(a) I ran setup.py on a fresh install of Ubuntu 14.04 LTS, it sucessfully installed the necessary libraries for the software. No errors occured.
+(b) The coding style is clean, and pythonic and includes an if __name__ == '__main__':. It is robust, efficient and maintainable.
+(c) setup.py follows pep8 guidlines, including naming conventions and docstrings. It includes information about the necessary paramaters, and what a function should return.
+(d) The documentation for setup.py is clean, and to the point. It clearly states what this script is expected to do. Although no comments were added, I feel that this was appropriate as the code was very straight forward.
+(e) N/A
+
+File: gui.py
+Time: November 13, 19:07 version
+Reviewed by: Kyle Bridgemohansingh
+
+gui.py is a python file which serves as our basic UI for demo purposes, and later on for the full software.
+(a) I ran gui.py on a fresh install of Ubuntu 14.04 LTS, it sucessfully ran and I was able to use the UI.
+(b) The coding style is clean, and pythonic and includes an if __name__ == '__main__':. It is robust, efficient and maintainable.
+(c) gui.py follows most of the pep8 guidlines, including naming conventions and docstrings. It includes information about the necessary paramaters, and what a function should return. Although
+(d) The documentation for gui.py is clean, and explains clearly what each functions purpose is. The comments are appropriate where placed.
+(e) N/A (We along with Anya decided that testing for UI was not necessary)

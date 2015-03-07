@@ -1,0 +1,35 @@
+File(s): src/twitter_explorer.py, src/unit_tests/test_twitter_explorer.py
+Time: Nov 26 13:52 version
+Reviewed by: Ryan Pan
+
+    The functions within twitter_explorer.py are the ones we have discussed as a group. Going over the code we can see that it is complete. All functions are correct. For example on lines 124-135 in get_tweets one can see that the code is complete as count will iterate to end the while loop, and the try is matched with an appropriate except block. Each function outputs the correct data (or none at all) as we have discussed in out group. Each function follows pep-8 style of docstrings and variable naming, along with this there are good comments which makes following along with the code easy. Variable naming is meaningful, for example tweet_list is a list of tweet objects, and tweet_id is the ID of the tweet. The test cases have been updated to resemble the new optimised functions such as get_tweets and get_sources. The test case also has a few edge cases and a stress test to ensure continuous performance. Overall this has been an improvement from the last review, but some of the lines still go over 80 characters (ie. line 177). The code is of good quality and there’s is no repeating code in twitter_explorer, it is consistent, and easy to maintain.
+
+File(s): src/visualizer.py
+Time:
+Reviewed by: Kyle Bridgemohansingh
+
+	The functions within visualizer.py are the types of visualizations we decided that we wanted as a group. We also believe that this coincides with our clients wants. All the functions within visualizer.py run properly, and all of them are complete. Jai and I went over the for-loops to see that they would all start and complete each time. Looking over the code I can see it is very pythonic and following appropriate naming conventions. For example max_dim follows pep8 and appropriately represents max dimension. I believe that the naming is accurate allowing the code to be easily maintainable. The docstrings included are representative of the parameters needed, as well as the description and output. It is easy to understand. Unfortunately, comments were a bit lacking so following the code may be troublesome if you're not familiar with some of the packages used. I would like to see a few more comments added for each block of code (if not straight forward). Some of the lines go well over 80 characters, but other than that I feel like this code is of good quality and will be easy to maintain with addition of some more comments. We did not decide to include testing for visualizer.py
+
+File(s): src/warc_creator.py
+Time:
+Reviewed by: Xiang Wang (Roger)
+
+	Looking at Ryan's Code it is easy to see that it is correct, it uses our config.yaml however there are two functions that are very similar. Only a difference of about 6 or 7 characters, so it would probably have been better to make it as one function. As mentioned previously the code is simple and it is easy to see that it is complete. The code is pythonic, however it does not follow pep8 conventions perfectly. The input type for the docstrings are not very clear, for example line 8 says, "(url)->None", but I have no idea what url is. Is it a string? int? I need to know this stuff. There is a lack of comments, however this may be appropriate as the code is very simple, and most of the code speaks for itself. 
+
+File(s): gui.py, setup.py
+Time:
+Reviewed by: Kyle Bridgemohansingh
+
+	Ryan properly implemented the correct functions that we discussed we needed as a group. Ryan's code for gui.py and setup.py is correct, all the correct imports are called before their modules/functions are. There are no loops so it's easy to see that the code is complete. The code seems maintainable and is easy to understand, especially if you have previous experience with TKinter. The naming conventions follow pep8 and are easy to understand. While there are good docstrings, there is no comments. Maybe one or two would have been nice, but overall the code is self-explanatory enough that it is not required. These files seem to follow pep8 very closely. There was no tests for these files at the time.
+
+File(s): src/Analyzer.py
+Time:
+Reviewed by: Yuya Iwabuchi
+
+	Roger correctly implemented the functions that we wanted for our statistics. After Roger went through the code with me it was easy to see that it was complete and correct. All functions returned the correct types of data, and all for loops had an end. Unfortunately, there is a lack of docstring and comments which might make it difficult for someone to follow along. However the code is separated into nice little blocks of code which may make it a little easier to follow along, rather than if it was not separated at all. Overall there should be more comments. Other than the lack of docstrings and going over 80 characters per line Roger's code follows pep8 style and naming convention. There were no tests for Analyzer.py.
+
+File(s): Frontend/articles/admin.py, Frontend/tweets/admin.py
+Time:
+Reviewed by: Jai Sughand
+
+	I will using these two files as an example of Yuya's frontend work as they are very similar, and I believe that they will be a good example of the rest of his frontend work. Looking through the functions it is easy to see that the functions are what we need, and are correct and complete. The names of the functions are clear and concise which makes it easy for a future programmer to overtake this part of the source code. Also the naming conventions in general are clear and easy to understand. For example on line 26 the variable search_fields is very easy to understand. He uses correct data structures to hold information that is needed in following lines of code. There is no docstrings and comments which may make it difficult for a future programmer to maintain this code, however it is not so complicated that it couldn't be understood within a couple hours. Other than that Yuya's code follows pep8 style and conventions correctly. We did not include any tests for the frontend side of our project.

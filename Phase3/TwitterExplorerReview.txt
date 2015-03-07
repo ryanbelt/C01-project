@@ -1,0 +1,5 @@
+File:twitter_explorer.py, test_twitter_explorer.py
+Time:Nov 11 21:00 version
+
+Kyle’s twitter explorer code had correct outputs of all the functions that we had discussed in the meetings. However, he needs to catch all types of exceptions that twitter API might cause. In line 55, he catches only one type of exception but not all.
+Variable and function naming were clear enough. Many places lacked comments which made it hard to understand the code. For example, the entire function get_follower_count on line 90 had no comments. DocStrings and PEP8 was followed correctly in the entire file except for parse_tweets function. Test cases covered all the extreme cases except for Twitter exception raises. Good use of setup and teardown in the unit test. Regression testing was appropriate for twitter_explorer and was used by Kyle.

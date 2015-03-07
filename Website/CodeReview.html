@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team ACME</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+				
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">ACME</a></h1>
+							<span>Team 4</span>
+						</div>
+					
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Team</a></li>
+								<li class="current">
+									<a href="">Project</a>
+									<ul>
+										<li><a href="StateOfProject.html">State of Project</a></li>
+										<li><a href="CRCCards.html">CRC Cards</a></li>
+										<li><a href="ReleasePlan.html">Release Plan</a></li>
+										<li>
+											<a href="">Iteration Plans</a>
+											<ul>
+												<li><a href="IterationPlan1.html">Iteration Plan 1</a></li>
+												<li><a href="IterationPlan2.html">Iteration Plan 2</a></li>
+												<li><a href="IterationPlan3.html">Iteration Plan 3</a></li>
+												<li><a href="IterationPlan4.html">Iteration Plan 4</a></li>
+												<li><a href="IterationPlan5.html">Iteration Plan 5</a></li>
+											</ul>
+										</li>
+										<li><a href="CodeReview.html">Code Review</a></li>
+										<li><a href="UmlDiagrams.html">UML Diagrams</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">Personas & User Stories</a>
+									<ul>
+										<li>
+											<a href="">Researcher</a>
+											<ul>
+												<li><a href="ResearcherPersona.html">Persona</a></li>
+												<li><a href="ResearcherUserStories.html">User Stories</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="">Librarian</a>
+											<ul>
+												<li><a href="LibrarianPersona.html">Persona</a></li>
+												<li><a href="LibrarianUserStories.html">User Stories</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="">Library Programmer</a>
+											<ul>
+												<li><a href="ProgrammerPersona.html">Persona</a></li>
+												<li><a href="ProgrammerUserStories.html">User Stories</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="">Research Assisntant</a>
+											<ul>
+												<li><a href="AssistantPersona.html">Persona</a></li>
+												<li><a href="AssistantUserStories.html">User Stories</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="SystemMetaphor.html">System Metaphor</a></li>
+							</ul>
+						</nav>
+					
+				</header>
+			</div>
+
+		<!-- Main Box -->
+			<div id="features-wrapper">
+				<div class="container">
+					<div class="row">
+						<section class="box feature">
+							<div class="inner">
+								<header>
+									<h2 align="center">Code Review - November 26</h2>
+								</header>
+
+								<div class="stylevideo">
+									<div class="stylevideo">
+										<iframe width="853" height="480" src="http://www.youtube.com/embed/XclN3hhQiA8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+								<b>
+								File: src/twitter_explorer.py, src/unit_tests/test_twitter_explorer.py<br>
+								Time: November 26 13:52 version<br>
+								Reviewed by: Ryan Pan<br>
+								</b>
+
+    							The functions within twitter_explorer.py are the ones we have discussed as a group. Going over the code we can see that it is complete. All functions are correct. For example on lines 124-135 in get_tweets one can see that the code is complete as count will iterate to end the while loop, and the try is matched with an appropriate except block. Each function outputs the correct data (or none at all) as we have discussed in out group. Each function follows pep-8 style of docstrings and variable naming, along with this there are good comments which makes following along with the code easy. Variable naming is meaningful, for example tweet_list is a list of tweet objects, and tweet_id is the ID of the tweet. The test cases have been updated to resemble the new optimised functions such as get_tweets and get_sources. The test case also has a few edge cases and a stress test to ensure continuous performance. Overall this has been an improvement from the last review, but some of the lines still go over 80 characters (ie. line 177). The code is of good quality and there’s is no repeating code in twitter_explorer, it is consistent, and easy to maintain.
+
+								<br><br>
+
+								<b>
+								File: src/visualizer.py<br>
+								Time: November 26 13:52 version<br>
+								Reviewed by: Kyle Bridgemohansingh<br>
+								</b>
+								The functions within visualizer.py are the types of visualizations we decided that we wanted as a group. We also believe that this coincides with our clients wants. All the functions within visualizer.py run properly, and all of them are complete. Jai and I went over the for-loops to see that they would all start and complete each time. Looking over the code I can see it is very pythonic and following appropriate naming conventions. For example max_dim follows pep8 and appropriately represents max dimension. I believe that the naming is accurate allowing the code to be easily maintainable. The docstrings included are representative of the parameters needed, as well as the description and output. It is easy to understand. Unfortunately, comments were a bit lacking so following the code may be troublesome if you're not familiar with some of the packages used. I would like to see a few more comments added for each block of code (if not straight forward). Some of the lines go well over 80 characters, but other than that I feel like this code is of good quality and will be easy to maintain with addition of some more comments. We did not decide to include testing for visualizer.py
+
+								<br><br>
+
+								<b>
+								File: src/warc_creator.py<br>
+								Time: November 26 13:52 version<br>
+								Reviewed by: Xiang Wang (Roger)<br>
+								</b>
+
+								Looking at Ryan's Code it is easy to see that it is correct, it uses our config.yaml however there are two functions that are very similar. Only a difference of about 6 or 7 characters, so it would probably have been better to make it as one function. As mentioned previously the code is simple and it is easy to see that it is complete. The code is pythonic, however it does not follow pep8 conventions perfectly. The input type for the docstrings are not very clear, for example line 8 says, "(url)->None", but I have no idea what url is. Is it a string? int? I need to know this stuff. There is a lack of comments, however this may be appropriate as the code is very simple, and most of the code speaks for itself. 
+
+								<br><br>
+
+								<b>
+								File: gui.py, setup.py<br>
+								Time: November 26 13:52 version<br>
+								Reviewed by: Kyle Bridgemohansingh<br>
+								</b>
+
+								Ryan properly implemented the correct functions that we discussed we needed as a group. Ryan's code for gui.py and setup.py is correct, all the correct imports are called before their modules/functions are. There are no loops so it's easy to see that the code is complete. The code seems maintainable and is easy to understand, especially if you have previous experience with TKinter. The naming conventions follow pep8 and are easy to understand. While there are good docstrings, there is no comments. Maybe one or two would have been nice, but overall the code is self-explanatory enough that it is not required. These files seem to follow pep8 very closely. There was no tests for these files at the time. 								
+								<br><br>
+
+								<b>
+								File: src/Analyzer.py<br>
+								Time: November 26 13:52 version<br>
+								Reviewed by: Yuya Iwabuchi<br>
+								</b>
+
+								Roger correctly implemented the functions that we wanted for our statistics. After Roger went through the code with me it was easy to see that it was complete and correct. All functions returned the correct types of data, and all for loops had an end. Unfortunately, there is a lack of docstring and comments which might make it difficult for someone to follow along. However the code is separated into nice little blocks of code which may make it a little easier to follow along, rather than if it was not separated at all. Overall there should be more comments. Other than the lack of docstrings and going over 80 characters per line Roger's code follows pep8 style and naming convention. There were no tests for Analyzer.py.
+
+								<br><br>
+
+								<b>
+								File: Frontend/articles/admin.py, Frontend/tweets/admin.py<br>
+								Time: November 26 13:52 version<br>
+								Reviewed by: Jai Sughand<br>
+								</b>
+
+								I will using these two files as an example of Yuya's frontend work as they are very similar, and I believe that they will be a good example of the rest of his frontend work. Looking through the functions it is easy to see that the functions are what we need, and are correct and complete. The names of the functions are clear and concise which makes it easy for a future programmer to overtake this part of the source code. Also the naming conventions in general are clear and easy to understand. For example on line 26 the variable search_fields is very easy to understand. He uses correct data structures to hold information that is needed in following lines of code. There is no docstrings and comments which may make it difficult for a future programmer to maintain this code, however it is not so complicated that it couldn't be understood within a couple hours. Other than that Yuya's code follows pep8 style and conventions correctly. We did not include any tests for the frontend side of our project.
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+		<!-- Main Box -->
+			<div id="features-wrapper">
+				<div class="container">
+					<div class="row">
+						<section class="box feature">
+							<div class="inner">
+								<header>
+									<h2 align="center">Code Review - November 13</h2>
+								</header>
+
+								<div class="stylevideo">
+									<div class="stylevideo">
+										<iframe width="853" height="480" src="http://www.youtube.com/embed/uuDR086etYM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<b>
+								File: setup.py<br>
+								Time: November 13, 18:58 version<br>
+								Reviewed by: Kyle Bridgemohansingh<br>
+								</b>
+
+								setup.py is a python file which gives installation shell script permission and executes.
+								I ran setup.py on a fresh install of Ubuntu 14.04 LTS, it sucessfully installed the necessary libraries for the software. No errors occured.
+								The coding style is clean, and pythonic and includes an if __name__ == '__main__':. It is robust, efficient and maintainable.
+								setup.py follows pep8 guidlines, including naming conventions and docstrings. It includes information about the necessary paramaters, and what a function should return.
+								The documentation for setup.py is clean, and to the point. It clearly states what this script is expected to do. Although no comments were added, I feel that this was appropriate as the code was very straight forward.
+
+								<br><br>
+
+								<b>
+								File: gui.py<br>
+								Time: November 13, 19:07 version<br>
+								Reviewed by: Kyle Bridgemohansingh<br>
+								</b>
+
+								gui.py is a python file which serves as our basic UI for demo purposes, and later on for the full software.
+								I ran gui.py on a fresh install of Ubuntu 14.04 LTS, it sucessfully ran and I was able to use the UI.
+								The coding style is clean, and pythonic and includes an if __name__ == '__main__':. It is robust, efficient and maintainable.
+								gui.py follows most of the pep8 guidlines, including naming conventions and docstrings. It includes information about the necessary paramaters, and what a function should return. Although
+								The documentation for gui.py is clean, and explains clearly what each functions purpose is. The comments are appropriate where placed.
+								(We along with Anya decided that testing for UI was not necessary yet)
+
+								<br><br>
+
+								<b>
+								File: twitter_explorer.py, test_twitter_explorer.py<br>
+								Time: Nov 11 21:00 version<br>
+								Reviewed by: Jai Sughand<br>
+								</b>
+
+								Kyle’s twitter explorer code had correct outputs of all the functions that we had discussed in the meetings. However, he needs to catch all types of exceptions that twitter API might cause. In line 55, he catches only one type of exception but not all.
+								Variable and function naming were clear enough. Many places lacked comments which made it hard to understand the code. For example, the entire function get_follower_count on line 90 had no comments. DocStrings and PEP8 was followed correctly in the entire file except for parse_tweets function. Test cases covered all the extreme cases except for Twitter exception raises. Good use of setup and teardown in the unit test. Regression testing was appropriate for twitter_explorer and was used by Kyle.
+
+								<br><br>
+
+								<b>
+								File: article_explorer.py, test_article_explorer<br>
+								Time: Nov 13 20:00 version<br>
+								Reviewed by: Ryan Pan<br>
+								</b>
+
+								After going through the program and reviewing the code, article_explorer seems pretty well done. Every function followed our expected purpose and gave appropriate output. The functionality and variable naming are pretty good. It has very understandable doc strings. Also, the whole file looks very clean. But there are some thing can be improve as well. First of all, each function is long and with so less comment. It is hard to understand and modify for upcoming programmer. Second, it doesn’t follow the PEP8 style so well. For example, line 215 is over 80 chars limit. For testing, Roger covered most of the areas of extreme cases. He used sample variables (kind of like stubs) to test function independently. 								
+								<br><br>
+
+								<b>
+								File: executer.py, test_executer.py<br>
+								Time: Nov 13 20:00 version<br>
+								Reviewed by: Roger Wang<br>
+								</b>
+
+								Yuya’s executer functions took care of all the cases and bugs that might cause an error. The behaviour of the code was as wanted by the team. The run, pause, stop functions performed expected results and gave appropriate exceptions. The DocStrings were meaningful and I could understand the code quickly. Yuya should put more comments in the code though because other programmers might need to modify the code. PEP8 style of coding was correctly used. Spaces, indentations, commas in lines like 89 and 135 demonstrate good style. Code was well organised and import statements were all on top of the file. Yuya used regression testing on for his functions. However he should consider more corner cases like the input file does not exist to catch the exception on line 55. Overall, the quality of coding seems good.
+
+								<br><br>
+
+								<b>
+								File: Frontend/.*<br>
+								Time: Nov 13 14:00 version<br>
+								Reviewed by: Yuya Iwabuchi<br>
+								</b>
+
+								Jai has done a pretty good job building a UI using Django. Many user stories functionalities were covered by the features Jai implemented. The UI was manually tested by me and the entire team. The PEP8 guidelines of coding was practiced well including the fucntion naming and variable naming. However, Jai did not make any docstrings in his code yet. He should comment and put docstrings while development instead of doing it later. Testing of the Django will be done using Django Test Api in the next iteration by Jai due to lack of time.
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="3u">
+						
+							<!-- Links -->
+								<section class="widget links">
+									<h3>Links</h3>
+									<ul class="style2">
+										<li><a href="http://www.utsc.utoronto.ca/~atafliovich/cscc01/index.shtml">CSCC01 Homepage</a></li>
+										<li><a href="http://www.github.com/CSCC01Fall2014/team04-Project">ACME's Repository</a></li>
+									</ul>
+								</section>
+						
+						</div>
+
+						<div class="3u" style="float: right">
+						
+							<!-- Contact -->
+								<section class="widget contact last">
+									<h3>Contact Us</h3>
+									<p><a href="http://www.utsc.utoronto.ca/~advancement/find/pdf/UTSC_Campus_Map.pdf" target="_blank">SW143</a><br>
+									<a href="http://www.google.ca/maps/place/University+of+Toronto+Scarborough" target="_blank">1265 Military Trail</a><br>
+									Toronto, ON M1C1A4<br>
+									Wed 4:00 - 5:00 PM</p>
+								</section>
+						
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; ACME. All rights not reserved yet</li><li>Thanks to <a href="http://twitter.com/n33co">@n33co</a> for <a href="http://html5up.net">HTML5 UP</a> template!</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+	</body>
+</html>

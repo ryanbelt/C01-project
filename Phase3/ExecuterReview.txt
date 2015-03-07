@@ -1,0 +1,4 @@
+File:executer.py
+Time:Nov 12 23:00 version
+
+Yuya’s executer functions took care of all the cases and bugs that might cause an error. The behaviour of the code was as wanted by the team. The run, pause, stop functions performed expected results and gave appropriate exceptions. However, no docstring, comments, test cases were produced due to lack of time. Yuya should work more on comments and test cases too rather than perfecting the program by manual testing. PEP8 style of coding was correctly used. Spaces, indentations, commas in lines like 89 and 135 demonstrate that. Code was well organised and import statements were all on top of the file. Yuya is currently working on testing and commenting the code and will be reviewed in the future.

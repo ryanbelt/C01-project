@@ -1,0 +1,28 @@
+*.tmp
+
+
+# Python & Django Specific
+*.pyo
+*.pyc
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+
+# Pycharm
+.idea
+
+# Database
+*.sqlite3
+
+# Executer Comm Files
+*.stream
+
+# Warc folder
+warc/*
